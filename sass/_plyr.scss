@@ -1,0 +1,21 @@
+.plyr--full-ui input[type=range] {
+  color: $secondaryColorNormal;
+}
+
+.plyr__control--overlaid {
+  background: $secondaryColorNormal;
+}
+
+.plyr--video .plyr__control.plyr__tab-focus,
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control[aria-expanded=true] {
+  background: $secondaryColorNormal;
+}
+
+.plyr__control.plyr__tab-focus {
+  box-shadow: 0 0 0 5px $secondaryColorNormal;
+}
+
+.plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::before {
+  background: $secondaryColorNormal;
+}

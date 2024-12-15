@@ -1,0 +1,127 @@
+.btn {
+  border-radius: $mainRadius;
+  padding-right: 25px;
+  padding-left: 25px;
+  font-size: 13px;
+  
+  &:focus, &:active {
+    box-shadow: none !important;
+  }
+
+  &.btn-md {
+    padding: 10px 30px;
+  }
+
+  &.btn-lg {
+    font-size: 14px;
+    padding: 12px 40px;
+  }
+  
+  &.btn-primary {
+    background-color: $primaryColor;
+    border-color: $primaryColor;
+    transition: .3s;
+
+    &:hover {
+      background-color: $primaryColorNormal;
+      border-color: $primaryColorNormal;
+    }
+
+  }
+
+  &.btn-outline-primary {
+    color: $primaryColor;
+    border-color: $primaryColor;
+
+    &:hover {
+      background-color: $primaryColor;
+      color: $textPrimary;
+    }
+
+  }
+
+  &.btn-secondary {
+    background-color: $secondaryColor;
+    border-color: $secondaryColor;
+    transition: .3s;
+
+    &:hover {
+      background-color: $secondaryColorNormal;
+      border-color: $secondaryColorNormal;
+    }
+
+  }
+
+  &.btn-outline-secondary {
+    color: $secondaryColor;
+    border-color: $secondaryColor;
+
+    &:hover {
+      background-color: $secondaryColor;
+      color: $textPrimary;
+    }
+
+  }
+
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: $mainRadius;
+  border: 1px solid transparent;
+  color: $textPrimary;
+  background: transparent;
+  transition: .3s;
+  cursor: pointer;
+
+  &:hover {
+    color: $textPrimary;
+  }
+
+  &.action-outline-accept {
+    border-color: $borderColor;
+    color: $textMuted;
+
+    &:hover {
+      background-color: $primaryColor;
+      border-color: $primaryColor;
+      color: $textPrimary;
+    }
+
+  }
+
+  &.action-outline-decline {
+    border-color: $borderColor;
+    color: $textMuted;
+
+    &:hover {
+      background-color: $secondaryColor;
+      border-color: $secondaryColor;
+      color: $textPrimary;
+    }
+
+  }
+
+  &.action-accept {
+    background-color: $primaryColor;
+
+    &:hover {
+      background-color: $primaryColorNormal;
+    }
+
+  }
+
+  &.action-decline {
+    background-color: $secondaryColor;
+
+    &:hover {
+      background-color: $secondaryColorNormal;
+    }
+
+  }
+
+}

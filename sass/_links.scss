@@ -1,0 +1,58 @@
+.link {
+
+  &.link-secondary {
+    color: $secondaryColorNormal;
+
+    &:hover {
+      color: $secondaryColor;
+    }
+
+  }
+
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: $mainRadius;
+  color: $textPrimary;
+  flex-shrink: 0;
+  
+  &:hover {
+    transform: translateY(-5px);
+    opacity: .8;
+    color: #fff;
+  }
+
+  &.facebook {
+    background-color: #1877f2;
+  }
+
+  &.twitter {
+    background-color: #1abcff;
+  }
+
+  &.instagram {
+    background-color: #f8468d;
+  }
+
+  &.twitch {
+    background-color: #7b5dfa;
+  }
+
+  &.youtube {
+    background-color: #fd434f;
+  }
+
+  &.github {
+    background-color: #111;
+  }
+
+  &.discord {
+    background-color: #7289da;
+  }
+
+}

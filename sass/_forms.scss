@@ -1,0 +1,128 @@
+.group-input {
+  position: relative;
+  height: 48px;
+
+  input {
+    padding-right: 45px;
+    padding-left: 15px;
+    padding-bottom: 2px;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    color: $textPrimary;
+    border-radius: $mainRadius;
+    border: 1px solid $borderColor;
+    transition: .3s border;
+
+    &:focus {
+      border-color: $primaryColor;
+    }
+
+    &::placeholder {
+      color: $textMuted;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+
+  }
+
+  .group-input-icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    top: 0;
+    right: 0;
+    height: 100%;
+    color: $borderColor;
+
+    i {
+      font-size: 17px;
+      line-height: .05em;
+
+      &:nth-child(2) {
+        display: none;
+        cursor: pointer;
+        transition: .3s color;
+
+        &:hover {
+          color: $textPrimary;
+        }
+
+      }
+
+    }
+
+  }
+
+  &.show {
+
+    .group-input-icon {
+
+      i {
+        display: none;
+
+        &:last-child {
+          display: block;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.form-control {
+  background: transparent;
+  box-shadow: none !important;
+  border-color: $borderColor;
+  color: $textPrimary;
+  border-radius: $mainRadius;
+
+  &.form-control-md {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+  }
+
+  &:focus {
+    background: transparent;
+    border-color: $primaryColorNormal;
+    color: $textPrimary;
+  }
+
+}
+
+.form-float {
+  position: relative;
+
+  .form-float-text {
+    position: absolute;
+    top: 50%;
+    left: 11px;
+    padding: 1px 6px;
+    transform: translateY(-50%);
+    background-color: $bgPrimaryDark;
+    color: $textMuted;
+    user-select: none;
+    transition: .3s;
+    cursor: text;
+  }
+  
+  &.active {
+
+    .form-float-text {
+      top: 0;
+      font-size: 11px;
+      left: 8px;
+    }
+    
+  }
+
+}

@@ -1,0 +1,32 @@
+$primaryColor: #825aad;
+$primaryColorNormal: #a26fda;
+$primaryColorDarker: #5c4179;
+$primaryColorLighter: #d6b0ff;
+$secondaryColor: #c72f55;
+$secondaryColorNormal: #f9507d; // f34572
+$bgPrimary: #222;
+$bgPrimaryDarker: #2C2C2C;
+$bgPrimaryDark: #333;
+$bgPrimaryNormal: #3c3c3c;
+$bgPrimaryLighter: #444;
+$bgPrimaryHover: #555;
+$bgWhite: #fff;
+$textPrimary: #f8f8f8;
+$textMuted: #bbb;
+$simplebar: #aaa;
+$borderColor: #666;
+$borderColorDark: #555;
+$bgSuccess: #6abd0c;
+$bgDanger: #f9515c;
+
+.text-primary {
+  color: $primaryColorLighter !important;
+}
+
+.text-muted {
+  color: $textMuted !important;
+}
+
+.bg-success {
+  background-color: $bgSuccess !important;
+}
